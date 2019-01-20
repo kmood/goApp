@@ -43,12 +43,42 @@ func FindNodeByAtrr(atrrName, attrValue string, node *html.Node) *html.Node {
 		}
 	}
 	for n := node.FirstChild; n != nil; n = n.NextSibling {
+		if n.Type != html.ElementNode {
+			continue
+		}
 		destNode := FindNodeByAtrr(atrrName, attrValue, n)
 		if destNode != nil {
 			return destNode
 		}
 	}
 	return nil
+}
+
+func recursion(node *html.Node, Data string) *html.Node {
+	//fmt.Println(node.Data,",",node.Data == "body")
+	if node == nil {
+		return nil
+	}
+	if node.Data == Data {
+		return node
+	}
+	for c := node.FirstChild; c != nil; c = c.NextSibling {
+		recursion := recursion(c, Data)
+		if recursion != nil {
+			return recursion
+		}
+	}
+	return nil
+}
+func GetHeadHtml(node *html.Node) *html.Node {
+	return node.FirstChild.NextSibling
+}
+
+func GetHeadNode(node *html.Node) *html.Node {
+	return recursion(node, "head")
+}
+func GetBodyNode(node *html.Node) *html.Node {
+	return recursion(node, "body")
 }
 
 type Parse interface {

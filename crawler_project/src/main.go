@@ -1,28 +1,33 @@
 package main
 
-import (
-	"fmt"
-	"utils"
-)
+import "gui"
 
 const xLIANJIA_CITY_URL = "https://bj.lianjia.com/city/"
 const TEST_FILE_PATH = "C:\\Users\\admin\\Desktop\\crawler\\lianjia_city.html"
 
 func main() {
+	////抓取数据
+	//rentHouseInfo := utils.NewRentHouseInfo()
+	//rentHouseInfo.HouseInfo = make([]utils.HouseInfo,0)
+	//rentHouseInfo.CityUrl = "https://bj.lianjia.com/"
+	//
+	//rentHouseInfo.HtmlParse()
+	//i, e := rentHouseInfo.Insert()
+	//if e != nil {
+	//	fmt.Println("插入到数据库失败",e)
+	//}
+	//fmt.Printf("-------新建%d条数据----------",i)
 
-	//node := utils.ReadNodeByHttp(xLIANJIA_CITY_URL)
-	//fmt.Println(node.FirstChild.NextSibling)
-	//bodyNode := utils.GetBodyNode(utils.GetHeadHtml(node))
+	//数据库表生成
+	//fmt.Println(utils.GeneratorTableSql(utils.HouseInfo{}))
 
-	//获取城市url数据结构
-	cityUrlList := &utils.CityUrlList{"https://fs.lianjia.com/city/", make([]utils.CityUrl, 0)}
-	cityUrlList.HtmlParse()
-	fmt.Println(cityUrlList)
+	gui.SnapUpGui()
+}
 
-	//file := utils.ReadNodeByFile(TEST_FILE_PATH)
-
-	//fmt.Println(file.FirstChild)
-
-	//fmt.Println(utils.FindNodeByAtrr("class","city_selection_section", utils.GetBodyNode(file)))
-
+func getUniqe(arrs []int) int {
+	ret := arrs[0]
+	for _, arr := range arrs {
+		ret = ret ^ arr
+	}
+	return ret
 }
