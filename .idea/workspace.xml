@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="524fbbf0-92b3-4ad0-b4c8-aa83289679db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/bin/dlv.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/configFile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/getJobWebpage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/blang/semver.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/go-sql-driver/mysql.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/lxn/walk.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/lxn/walk/declarative.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/lxn/win.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/tebeka/selenium.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/tebeka/selenium/chrome.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/tebeka/selenium/firefox.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/tebeka/selenium/internal/zip.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/github.com/tebeka/selenium/log.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/golang.org/x/net/html.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/golang.org/x/net/html/atom.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/gopkg.in/Knetic/govaluate.v3.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/gui.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/selenium.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/pkg/windows_amd64/utils.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/association.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/association_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_delete.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_query.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_query_preload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_row_query.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_save.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_system_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callback_update.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/callbacks_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/create_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/customize_column_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/delete_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialect_common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialect_mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialect_postgres.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialect_sqlite3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialects/mssql/mssql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialects/mysql/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialects/postgres/postgres.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/dialects/sqlite/sqlite.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/embedded_struct_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/errors_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/field.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/field_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/join_table_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/join_table_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/migration_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/model_struct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/multi_primary_keys_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/naming.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/naming_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/pointer_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/polymorphic_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/preload_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/query_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/scaner_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/scope.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/scope_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/search_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/test_all.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/update_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/github.com/jinzhu/gorm/wercker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/gui/walkGui.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/selenium/seleniumGO.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/utils/dbGeneratorUtil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/utils/dbUtil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/utils/htmlParse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/utils/htmlParse_lianjia.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobCrawler/src/utils/logUtil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/bin/dlv.exe" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/bin/dlv.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/configFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/configFile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/getJobWebpage.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/getJobWebpage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/blang/semver.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/blang/semver.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/go-sql-driver/mysql.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/go-sql-driver/mysql.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/lxn/walk.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/lxn/walk.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/lxn/walk/declarative.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/lxn/walk/declarative.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/lxn/win.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/lxn/win.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/tebeka/selenium.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/tebeka/selenium.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/tebeka/selenium/chrome.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/tebeka/selenium/chrome.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/tebeka/selenium/firefox.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/tebeka/selenium/firefox.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/tebeka/selenium/internal/zip.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/tebeka/selenium/internal/zip.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/github.com/tebeka/selenium/log.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/github.com/tebeka/selenium/log.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/golang.org/x/net/html.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/golang.org/x/net/html.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/golang.org/x/net/html/atom.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/golang.org/x/net/html/atom.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/gopkg.in/Knetic/govaluate.v3.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/gopkg.in/Knetic/govaluate.v3.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/gui.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/gui.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/selenium.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/selenium.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/pkg/windows_amd64/utils.a" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/pkg/windows_amd64/utils.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/BurntSushi/xgb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/BurntSushi/xgbutil" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/blang/semver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/denisenkom/go-mssqldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/derekparker/delve" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/erikstmartin/go-testdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/go-crawler/lagou_jobs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/go-sql-driver/mysql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/gofrs/uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/golang/glog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/google/go-cmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/License" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/License" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/association.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/association.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/association_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/association_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_query.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_query_preload.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_query_preload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_row_query.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_row_query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_save.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_save.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_system_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_system_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callback_update.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callback_update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/callbacks_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/callbacks_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/create_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/create_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/customize_column_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/customize_column_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/delete_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/delete_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialect.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialect_common.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialect_common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialect_mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialect_mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialect_postgres.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialect_postgres.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialect_sqlite3.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialect_sqlite3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialects/mssql/mssql.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialects/mssql/mssql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialects/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialects/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialects/postgres/postgres.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialects/postgres/postgres.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/dialects/sqlite/sqlite.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/dialects/sqlite/sqlite.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/embedded_struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/embedded_struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/errors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/field.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/field.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/field_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/field_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/join_table_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/join_table_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/join_table_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/join_table_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/migration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/migration_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/model_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/model_struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/multi_primary_keys_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/multi_primary_keys_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/naming.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/naming.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/naming_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/naming_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/pointer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/pointer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/polymorphic_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/polymorphic_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/preload_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/preload_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/query_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/query_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/scaner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/scaner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/scope.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/scope.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/scope_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/scope_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/search_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/search_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/test_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/test_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/update_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/update_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/gorm/wercker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/github.com/jinzhu/gorm/wercker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/inflection" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/jinzhu/now" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/lib/pq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/lxn/walk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/lxn/win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/satori/go.uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/github.com/tebeka/selenium" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/golang.org/x/net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/gopkg.in/Knetic/govaluate.v3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/gui/walkGui.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/gui/walkGui.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/selenium/seleniumGO.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/selenium/seleniumGO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/utils/dbGeneratorUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/dbGeneratorUtil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/utils/dbUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/utils/htmlParse.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/utils/htmlParse_lianjia.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse_lianjia.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_project/src/utils/logUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/logUtil.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jobCrawler/.gitignore" />
+        <option value="$PROJECT_DIR$/jobCrawler/src/selenium/seleniumGO.go" />
+        <option value="$PROJECT_DIR$/jobCrawler/src/main.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\git-project\goApp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加工作爬虫" />
+    <MESSAGE value="调整爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整爬虫" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/selenium/seleniumGO.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/logUtil.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse_lianjia.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/selenium/seleniumGO.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#18#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/gui/walkGui.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#13#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/utils/dbGeneratorUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/utils/logUtil.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/utils/htmlParse_lianjia.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/utils/htmlParse.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobCrawler/src/utils/dbUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#15#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
