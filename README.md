@@ -1,11 +1,9 @@
 # goApp
-golang 的一些开源项目
+该工程主要为个人一些golang小工具。目前包括以下三个子工程：
 
-该工程主要为个人一些golang小工具。
-目前包括以下三个子工程：
-  windowFileCleaner 
-  lianjiaCrawler
-  huaweiWebSnap
+	windowFileCleaner
+	lianjiaCrawler
+	huaweiWebSnap
   
 windowFileCleaner 
 --------------------------------------------------------------------------------------------------
