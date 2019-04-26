@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/github.com/akavel/rsrc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/github.com/blang/semver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/github.com/lxn/walk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/github.com/lxn/win" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/github.com/tebeka/selenium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/windowFileCleaner/src/gopkg.in/Knetic/govaluate.v3" vcs="Git" />
   </component>
 </project>
