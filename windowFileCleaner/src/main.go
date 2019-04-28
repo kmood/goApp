@@ -62,6 +62,10 @@ func main() {
 										DataMember: "IsDir",
 										Width:      120,
 									},
+									declarative.TableViewColumn{
+										DataMember: "Zt",
+										Width:      120,
+									},
 								},
 								Model: fileInfoList,
 
@@ -73,6 +77,7 @@ func main() {
 										dir := lineText.Text()
 										url = filepath.Join(dir, "/", name)
 									}
+
 									webView.SetURL(url)
 
 								},

@@ -12,6 +12,7 @@ type FileInfo struct {
 	Name  string
 	IsDir bool
 	Size  int64
+	Zt    string
 }
 
 func NewFileInfo() *FileInfo {
@@ -48,24 +49,31 @@ func (f *FileInfoList) SetFileInfoList(path string) {
 	var total int64 = 0
 	for _, fileinf := range infos {
 		info := NewFileInfo()
-		var sizeTem int64 = 0
-		if fileinf.IsDir() {
-			info.IsDir = true
-			sizeTem, _ = getDirContainSize(path + filepath.ToSlash("/") + fileinf.Name())
-		} else {
-			info.IsDir = false
-			sizeTem = fileinf.Size()
-		}
-		info.Size = sizeTem >> 20
+		info.Zt = "正在计算"
+		go f.setFileAndIsdir(fileinf, info, path)
 		info.Name = fileinf.Name()
-		total += sizeTem
+		total += info.Size
 		f.items = append(f.items, info)
 	}
 	f.Path = path
 	f.TotalSize = total
 	f.PublishRowsReset()
 	defer file.Close()
+}
 
+func (f *FileInfoList) setFileAndIsdir(fileinf os.FileInfo, info *FileInfo, path string) {
+	var sizeTem int64 = 0
+	if fileinf.IsDir() {
+		info.IsDir = true
+		sizeTem, _ = getDirContainSize(path + filepath.ToSlash("/") + fileinf.Name())
+	} else {
+		info.IsDir = false
+		sizeTem = fileinf.Size()
+	}
+	info.Size = sizeTem >> 20
+	info.Zt = "已计算完成"
+	//f.PublishRowsReset()
+	return
 }
 
 //getDirContainSize  获取文件夹大小
