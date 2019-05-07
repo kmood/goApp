@@ -12,8 +12,8 @@
 
 ### 使用
 
-        直接下载使用：下载src下windowFileCleaner.exe文件。
-        源码构建：下载源码，src目录下通过go build -o windowFileCleaner.exe  -ldflags="-H windowsgui"进行构建
+       *直接下载使用：下载src下windowFileCleaner.exe文件。
+       *源码构建：下载源码，src目录下通过go build -o windowFileCleaner.exe  -ldflags="-H windowsgui"进行构建
 
 ### 效果图：
 	
