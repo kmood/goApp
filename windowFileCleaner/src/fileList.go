@@ -19,11 +19,6 @@ func NewFileInfo() *FileInfo {
 	return &FileInfo{}
 }
 
-//type FileInfoList struct {
-//	FileInfos []*FileInfo
-//	Path string
-//	TotalSize int64
-//}
 type FileInfoList struct {
 	walk.SortedReflectTableModelBase
 	Path      string

@@ -1,11 +1,5 @@
 package main
 
-import (
-	"app/crawler"
-	"fmt"
-	"github.com/gocolly/colly"
-)
-
 const xLIANJIA_CITY_URL = "https://bj.lianjia.com/city/"
 const TEST_FILE_PATH = "C:\\Users\\admin\\Desktop\\crawler\\lianjia_city.html"
 
@@ -28,24 +22,6 @@ func main() {
 	////数据库表生成
 	//fmt.Println(utils.GeneratorTableSql(utils.HouseInfo{}))
 
-	c := colly.NewCollector(
-	// Visit only domains: hackerspaces.org, wiki.hackerspaces.org
-	//colly.AllowedDomains("tj.fang.lianjia"),
-	)
-
-	// On every a element which has href attribute call callback
-	c.OnResponse(func(response *colly.Response) {
-		bytes := response.Body
-		LianjiaPageProcesser := crawler.NewLianjiaPageProcesser()
-		LianjiaPageProcesser.Process(bytes)
-	})
-	// Before making a request print "Visiting ..."
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL.String())
-	})
-
-	// Start scraping on https://hackerspaces.org
-	c.Visit("https://tj.fang.lianjia.com/loupan/pg1/")
 
 }
 
