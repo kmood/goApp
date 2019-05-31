@@ -1,0 +1,8 @@
+
+[Orm]
+    DSN = "root:123456@tcp(localhost:3307)/house?charset=utf8"
+    Active = 10  #最大连接数
+    Idle = 1
+    IdleTimeout = 1000
+[Log]
+    Dir = "D://"

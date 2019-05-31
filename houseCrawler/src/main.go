@@ -22,13 +22,5 @@ func main() {
 	////数据库表生成
 	//fmt.Println(utils.GeneratorTableSql(utils.HouseInfo{}))
 
-
 }
 
-//func getUniqe(arrs []int) int {
-//	ret := arrs[0]
-//	for _, arr := range arrs {
-//		ret = ret ^ arr
-//	}
-//	return ret
-//}

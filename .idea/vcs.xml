@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/BurntSushi/toml" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/PuerkitoBio/goquery" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/andybalholm/cascadia" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/htmlquery" vcs="Git" />
@@ -10,6 +11,7 @@
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/bitly/go-simplejson" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/go-playground/locales" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/go-playground/universal-translator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/go-sql-driver/mysql" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/gobwas/glob" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/gocolly/colly" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/golang/appengine" vcs="Git" />
@@ -43,11 +45,13 @@
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/inflection" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/jtolds/gls" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/kennygrant/sanitize" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/konsorten/go-windows-terminal-sequences" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/leodido/go-urn" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/pkg/errors" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/prometheus" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/saintfish/chardet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/sirupsen/logrus" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/smartystreets/assertions" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/smartystreets/goconvey" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/houseCrawler/src/github.com/stretchr/testify" vcs="Git" />

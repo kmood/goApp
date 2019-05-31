@@ -2,10 +2,12 @@ package crawler
 
 import (
 	"app"
+	"app/dao"
 	"bytes"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gocolly/colly"
+	"github.com/jinzhu/gorm"
 	"strconv"
 	"strings"
 	"time"
@@ -14,26 +16,35 @@ import (
 
 // LianjiaLoupanPageProcesser 链家楼盘页面解析器
 type LianjiaProcesser struct {
-	LianjiaHouseInfo []*LianjiaHouseInfo
+	LianjiaHouseInfo []*CrawlerLianjiaLoupanInfo
 	HouseInfo []* app.XFHouseInfo
 	Url string
 
 }
-type LianjiaHouseInfo struct {
-	Title       string //标题
-	Position    string //实际位置
-	DoorModel   string //户型
-	Price       int    //价格
-	PriceUnit   string //价格单位
-	TotalPrice  string //总价
-	CoveredArea string // 建筑面积
-	Feature     string //特点
-	Cjsj        string //爬取时间
-	DetailURI   string //查看详情url
+type CrawlerLianjiaLoupanInfo struct {
+	HouseID 	string`gorm:"primary_key"`
+	PriceInfo  		*CrawlerLianjiaLoupanInfoPrice
+	Title       string `comment_size:标题_100`//标题
+	Position    string `comment_size:实际位置_100`//实际位置
+	DoorModel   string `comment_size:户型_100`//户型
+	CoveredArea string `comment_size:建筑面积_100`// 建筑面积
+	Feature     string `comment_size:特点_100`//特点
+	DetailURI   string `comment_size:查看详情url_100`//查看详情url
+}
+type CrawlerLianjiaLoupanInfoPrice struct {
+	HouseID     string `comment_size:房屋唯一id_100`//标题
+	Price       int    `comment_size:价格_100`//价格
+	PriceUnit   string `comment_size:价格单位_100`//价格单位
+	TotalPrice  string `comment_size:总价_100`//总价
+	Cjsj        string `comment_size:爬取时间_100`//爬取时间
 }
 
-func NewLianjiaHouseInfo() *LianjiaHouseInfo {
-	return &LianjiaHouseInfo{}
+func NewCrawlerLianjiaLoupanInfoPrice() *CrawlerLianjiaLoupanInfoPrice {
+	return &CrawlerLianjiaLoupanInfoPrice{}
+}
+
+func NewLianjiaHouseInfo() *CrawlerLianjiaLoupanInfo {
+	return &CrawlerLianjiaLoupanInfo{}
 }
 
 func NewLianjiaProcesser() *LianjiaProcesser {
@@ -71,58 +82,69 @@ func (h *LianjiaProcesser) Process(responseBytes []byte) error {
 		houseInfo.Position += mainNodeSelector.Find(selectorPrefix + " div > div.resblock-location > a").Text()
 		//获取户型
 		houseInfo.DoorModel = utils.DelInvisibleChar(mainNodeSelector.Find(selectorPrefix + "div > a").Text())
+
+		infoPrice := NewCrawlerLianjiaLoupanInfoPrice
+		houseInfo.PriceInfo = infoPrice()
 		//获取价格
 		priceSelect := selectorPrefix + " div > div.resblock-price > div.main-price > span.number"
 		price := mainNodeSelector.Find(priceSelect).Text()
 		atoi, e := strconv.Atoi(price)
 		if e != nil {
-			fmt.Printf("解析字符串到整型报错", e)
+			houseInfo.PriceInfo.Price = 0
+		}else {
+			houseInfo.PriceInfo.Price = atoi
 		}
-		houseInfo.Price = atoi
 		//价格单位
-		houseInfo.PriceUnit = mainNodeSelector.Find(selectorPrefix +" div > div.resblock-price > div.main-price > span.desc").Text()
+		houseInfo.PriceInfo.PriceUnit = mainNodeSelector.Find(selectorPrefix +" div > div.resblock-price > div.main-price > span.desc").Text()
 		//总价单位
-		houseInfo.TotalPrice = mainNodeSelector.Find(selectorPrefix +" div > div.resblock-price > div.second").Text()
+		houseInfo.PriceInfo.TotalPrice = mainNodeSelector.Find(selectorPrefix +" div > div.resblock-price > div.second").Text()
 		//建筑面积
 		houseInfo.CoveredArea = mainNodeSelector.Find(selectorPrefix + "div > div.resblock-area > span").Text()
 		//特点
 		houseInfo.Feature = utils.DelInvisibleChar(strings.ReplaceAll(mainNodeSelector.Find(selectorPrefix+" div > div.resblock-tag").Text(), "\n", "/"))
 		//创建时间
-		houseInfo.Cjsj = time.Now().Format("2006-01-02 15:04:10")
+		houseInfo.PriceInfo.Cjsj = time.Now().Format("2006-01-02 15:04:10")
 		//详情页uri
 		houseInfo.DetailURI, _ = mainNodeSelector.Find(selectorPrefix + " div > div.resblock-name > a").Attr("href")
+		//房屋唯一id
+		houseInfo.PriceInfo.HouseID = "lianjia_loupan"+ houseInfo.DetailURI
+		houseInfo.HouseID = "lianjia_loupan"+ houseInfo.DetailURI
 		//添加
 		h.LianjiaHouseInfo = append(h.LianjiaHouseInfo, houseInfo)
 		//打印
-		println(fmt.Sprintf("%+v", houseInfo))
+		//println(fmt.Sprintf("%+v", houseInfo))
 		i++
 	}
 	return nil
 }
 
 func (h *LianjiaProcesser) DataHandler() error{
-	for _,lj := range h.LianjiaHouseInfo{
-		info := app.NewXFHouseInfo()
-		info.Cjsj = lj.Cjsj
-		info.Position = lj.Position
-		info.DetailURI = lj.DetailURI
-		info.DoorModel = lj.DoorModel
-		info.Price = lj.Price
-		info.CrawlerTime = time.Now()
-		info.Title = lj.Title
-		info.Feature = lj.Feature
-		info.CrawleURL = h.Url
-	}
 	return nil
 }
 
 func  (h *LianjiaProcesser)DataStore()error{
+	d := dao.New()
+	gorm.AddNamingStrategy(&gorm.NamingStrategy{
+		Column: func(name string) string {
+			return strings.ToLower(name)
+		},
+	})
+	db := d.ORM
+	db.AutoMigrate(&CrawlerLianjiaLoupanInfoPrice{})
+	db.AutoMigrate(&CrawlerLianjiaLoupanInfo{})
+	for _,lhi := range h.LianjiaHouseInfo {
+		priceInfo := lhi.PriceInfo
+
+		db.Create(&priceInfo)
+		if !db.NewRecord(lhi){
+			db.Create(lhi)
+		}
+	}
 	return nil
 }
-func (h *LianjiaProcesser)Spider(collector * colly.Collector,crawleURL string) error{
-	c := colly.NewCollector()
-	// On every a element which has href attribute call callback
-	c.OnResponse(func(response *colly.Response) {
+func (h *LianjiaProcesser)Spider(crawleURL string) error{
+	newCollector := colly.NewCollector()
+	newCollector.OnResponse(func(response *colly.Response) {
 		document, e := goquery.NewDocumentFromReader(bytes.NewReader(response.Body))
 		if e != nil {
 			return
@@ -134,20 +156,26 @@ func (h *LianjiaProcesser)Spider(collector * colly.Collector,crawleURL string) e
 		}
 		h.Url = crawleURL
 		//天津链家 https://tj.fang.lianjia.com/loupan/pg3/
+		if houseNum % 10 !=0 {
+			houseNum += 10
+		}
 		for i := 1; i < houseNum/10; i++ {
+			collector := colly.NewCollector()
 			url := crawleURL + "/loupan/pg"+strconv.Itoa(i)+"/"
-			c.OnResponse(func(response *colly.Response) {
+			println(url)
+			collector.OnResponse(func(response *colly.Response) {
 				//解析页面
 				h.Process(response.Body)
-				//数据处理
-				h.DataHandler()
-				//入库
-				h.DataStore()
 			})
 			collector.Visit(url)
 		}
+		//数据处理
+		h.DataHandler()
+		//入库
+		h.DataStore()
 	})
-	c.Visit("https://tj.fang.lianjia.com/loupan/pg1/")
+	newCollector.Visit(crawleURL+ "/loupan/pg1/")
 	return nil
 }
+
 

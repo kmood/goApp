@@ -1,7 +1,5 @@
 package main
 
-import "gui"
-
 const xLIANJIA_CITY_URL = "https://bj.lianjia.com/city/"
 const TEST_FILE_PATH = "C:\\Users\\admin\\Desktop\\crawler\\lianjia_city.html"
 
@@ -21,7 +19,10 @@ func main() {
 	//数据库表生成
 	//fmt.Println(utils.GeneratorTableSql(utils.HouseInfo{}))
 
-	gui.SnapUpGui()
+	//gui.SnapUpGui()
+	select {
+
+	}
 }
 
 func getUniqe(arrs []int) int {

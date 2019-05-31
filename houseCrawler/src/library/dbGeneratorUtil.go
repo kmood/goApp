@@ -1,4 +1,4 @@
-package utils
+package library
 
 import (
 	"reflect"
@@ -6,10 +6,9 @@ import (
 )
 
 //根据
-func GeneratorTableSql(class interface{}) string {
+func GeneratorTableSql(class interface{},tableName string,tableComment string) string {
 	typeof := reflect.TypeOf(class)
 	numField := typeof.NumField()
-	tableName := strings.ToLower(typeof.Name())
 	sql := "create table " + tableName + " ( "
 	for i := 0; i < numField; i++ {
 		structField := typeof.Field(i)
@@ -25,7 +24,7 @@ func GeneratorTableSql(class interface{}) string {
 		sql += " comment '" + comment + "',"
 	}
 	sql = strings.TrimSuffix(sql, ",")
-	sql += " ) "
+	sql += " ) COMMENT='"+tableComment+"' "
 	return sql
 }
 func getDbDataType(typeName string) string {
