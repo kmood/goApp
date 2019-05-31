@@ -1,38 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524fbbf0-92b3-4ad0-b4c8-aa83289679db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/app/config.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/GeneratorTableSql_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/conf/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/conf/config_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/orm/orm.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/orm/orm_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/orm/timestamp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/sql/dbUtil.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/sql/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/sql/mysql_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/database/sql/sql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/utils/dbUtil_test.go" afterDir="false" />
+    <list default="true" id="524fbbf0-92b3-4ad0-b4c8-aa83289679db" name="Default Changelist" comment="调整完善工程结构，增加配置文件、orm的基础封装，添加楼盘抓取的单元测试">
+      <change afterPath="$PROJECT_DIR$/houseCrawler/doc/EAModel.EAP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/doc/EAModel.ldb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/BurntSushi/toml.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/PuerkitoBio/goquery.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/antchfx/htmlquery.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/antchfx/xmlquery.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/bitly/go-simplejson.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/gobwas/glob.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/golang/text.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/jinzhu/gorm.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/kennygrant/sanitize.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/pkg/errors.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/saintfish/chardet.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/sirupsen/logrus.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/stretchr/testify.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/temoto/robotstxt.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/gopkg.in/go-playground/validator.v9.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/BurntSushi/toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/PuerkitoBio/goquery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/andybalholm/cascadia" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/htmlquery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xmlquery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/go-sql-driver/mysql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/gobwas/glob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/gocolly/colly" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/golang/protobuf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/hu17889/go_spider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/inflection" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/kennygrant/sanitize" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/konsorten/go-windows-terminal-sequences" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/AUTHORS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/api/prometheus/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/api/prometheus/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/random/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/random/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/simple/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/simple/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/counter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/desc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/expvar_collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/fnv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/gauge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/go_collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/histogram.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/metric.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/process_collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/promhttp/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/promhttp/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/push/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/push/push.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/registry.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/summary.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/untyped.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/value.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/vec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/go/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/go/metrics.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/MAINTAINERS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/http_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/expfmt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_14" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_19" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/minimal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/text_create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/text_parse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/autoneg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/eventlog_formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/syslog_formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/alert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/fingerprinting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/fnv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/labels.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/labelset.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/metric.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/signature.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/silence.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/value.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/route/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/route/route.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/version/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/version/info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/MAINTAINERS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/bcache.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/get.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/buddyinfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/cmdline" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/comm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/io" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/limits" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/mountstats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/cmdline" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/comm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/limits" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/584/stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/short/buddyinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/sizemismatch/buddyinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/valid/buddyinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/fs/xfs/stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/mdstat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/ip_vs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/ip_vs_stats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/xfrm_stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/abc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/ghi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/uvw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/xyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/ipvs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/mdstat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/mountstats.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_io.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_limits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_stat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/stat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/fixtures.ttar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/fs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/ttar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfrm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/parse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/xfs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/saintfish/chardet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/sirupsen/logrus" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/temoto/robotstxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/gopkg.in/go-playground/validator.v9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/log/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/time_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/go-sql-driver/mysql.a" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/go-sql-driver/mysql.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/crawler/spiderProcesser.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/spiderProcesser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/dao/dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/dao_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/dao/dao_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/group.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/group_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/memcache.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/memcache_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/redis.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/dao/redis_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/library/dbGeneratorUtil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseCrawler/src/utils/dbUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/utils/dbUtil.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/huaweiWebSnap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +229,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="364">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -54,7 +238,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="3402">
               <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
             </state>
           </provider>
@@ -186,6 +370,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,7 +455,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +470,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../openbilibili/backup-openbilibili-go-common-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -432,21 +616,21 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="3" width="1932" height="1044" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20192307" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4957265" visible="true" weight="0.35274726" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4957265" weight="0.35274726" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946582" weight="0.3978022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005342" side_tool="true" weight="0.39846322" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49358973" weight="0.33406594" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50267094" side_tool="true" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49732906" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49305555" weight="0.33406594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -532,6 +716,67 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/houseCrawler/src/github.com/golang/net" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/bitly/go-simplejson" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/go-playground/locales" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/go-playground/universal-translator" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/golang/appengine" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/golang/text" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/golang/tools" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc-go" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/abseil-cpp" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/benchmark" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/bloaty" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/bloaty/third_party/googletest" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/boringssl" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/boringssl-with-bazel" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/cares/cares" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/data-plane-api" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/gflags" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/gflags/doc" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/googleapis" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/googletest" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/libcxx" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/libcxxabi" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/protobuf" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/protobuf/third_party/benchmark" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/protobuf/third_party/googletest" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/protoc-gen-validate" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/upb" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/grpc/grpc/third_party/zlib" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/jtolds/gls" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/leodido/go-urn" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/pkg/errors" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/prometheus" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/smartystreets/assertions" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/smartystreets/goconvey" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/stretchr/testify" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/BurntSushi/toml" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/PuerkitoBio/goquery" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/andybalholm/cascadia" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/htmlquery" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xmlquery" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xpath" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/go-sql-driver/mysql" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/gobwas/glob" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/gocolly/colly" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/golang/protobuf" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/hu17889/go_spider" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/inflection" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/kennygrant/sanitize" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/konsorten/go-windows-terminal-sequences" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/saintfish/chardet" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/sirupsen/logrus" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/github.com/temoto/robotstxt" />
+      <path value="$PROJECT_DIR$/houseCrawler/src/gopkg.in/go-playground/validator.v9" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/github.com/akavel/rsrc" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/github.com/blang/semver" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/github.com/lxn/walk" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/github.com/lxn/win" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/github.com/tebeka/selenium" />
+      <path value="$PROJECT_DIR$/windowFileCleaner/src/gopkg.in/Knetic/govaluate.v3" />
     </ignored-roots>
     <MESSAGE value="添加工作爬虫" />
     <MESSAGE value="调整爬虫" />
@@ -543,7 +788,8 @@
     <MESSAGE value="添加页面解析器，实现链家楼盘页面解析器" />
     <MESSAGE value="引入dao" />
     <MESSAGE value="引入日志时间组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入日志时间组件" />
+    <MESSAGE value="调整完善工程结构，增加配置文件、orm的基础封装，添加楼盘抓取的单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整完善工程结构，增加配置文件、orm的基础封装，添加楼盘抓取的单元测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,13 +820,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil_test.go" />
     <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -611,11 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/library/database/orm/BUILD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/library/database/orm/BUILD" />
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm/errors.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -668,23 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/group.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/redis.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2106" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/group.go" />
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/redis.go" />
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/house.go">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/spiderProcesser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/github.com/gocolly/colly/response.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -906,17 +1129,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go">
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+        <state relative-caret-position="364">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go">
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="3402">
+          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
         </state>
       </provider>
     </entry>
