@@ -16,35 +16,10 @@ import (
 
 // LianjiaLoupanPageProcesser 链家楼盘页面解析器
 type LianjiaProcesser struct {
-	LianjiaHouseInfo []*CrawlerLianjiaLoupanInfo
+	LianjiaHouseInfo []*CrawlerLoupanInfo
 	HouseInfo []* app.XFHouseInfo
 	Url string
 
-}
-type CrawlerLianjiaLoupanInfo struct {
-	HouseID 	string`gorm:"primary_key"`
-	PriceInfo  		*CrawlerLianjiaLoupanInfoPrice
-	Title       string `comment_size:标题_100`//标题
-	Position    string `comment_size:实际位置_100`//实际位置
-	DoorModel   string `comment_size:户型_100`//户型
-	CoveredArea string `comment_size:建筑面积_100`// 建筑面积
-	Feature     string `comment_size:特点_100`//特点
-	DetailURI   string `comment_size:查看详情url_100`//查看详情url
-}
-type CrawlerLianjiaLoupanInfoPrice struct {
-	HouseID     string `comment_size:房屋唯一id_100`//标题
-	Price       int    `comment_size:价格_100`//价格
-	PriceUnit   string `comment_size:价格单位_100`//价格单位
-	TotalPrice  string `comment_size:总价_100`//总价
-	Cjsj        string `comment_size:爬取时间_100`//爬取时间
-}
-
-func NewCrawlerLianjiaLoupanInfoPrice() *CrawlerLianjiaLoupanInfoPrice {
-	return &CrawlerLianjiaLoupanInfoPrice{}
-}
-
-func NewLianjiaHouseInfo() *CrawlerLianjiaLoupanInfo {
-	return &CrawlerLianjiaLoupanInfo{}
 }
 
 func NewLianjiaProcesser() *LianjiaProcesser {
@@ -130,11 +105,10 @@ func  (h *LianjiaProcesser)DataStore()error{
 		},
 	})
 	db := d.ORM
-	db.AutoMigrate(&CrawlerLianjiaLoupanInfoPrice{})
-	db.AutoMigrate(&CrawlerLianjiaLoupanInfo{})
+	db.AutoMigrate(&CrawlerLoupanInfoPrice{})
+	db.AutoMigrate(&CrawlerLoupanInfo{})
 	for _,lhi := range h.LianjiaHouseInfo {
 		priceInfo := lhi.PriceInfo
-
 		db.Create(&priceInfo)
 		if !db.NewRecord(lhi){
 			db.Create(lhi)

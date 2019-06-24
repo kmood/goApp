@@ -1,222 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524fbbf0-92b3-4ad0-b4c8-aa83289679db" name="Default Changelist" comment="调整完善工程结构，增加配置文件、orm的基础封装，添加楼盘抓取的单元测试">
-      <change afterPath="$PROJECT_DIR$/houseCrawler/doc/EAModel.EAP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/doc/EAModel.ldb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/BurntSushi/toml.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/PuerkitoBio/goquery.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/antchfx/htmlquery.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/antchfx/xmlquery.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/bitly/go-simplejson.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/gobwas/glob.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/golang/text.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/jinzhu/gorm.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/kennygrant/sanitize.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/pkg/errors.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/saintfish/chardet.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/sirupsen/logrus.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/stretchr/testify.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/github.com/temoto/robotstxt.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/pkg/windows_amd64/gopkg.in/go-playground/validator.v9.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/BurntSushi/toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/PuerkitoBio/goquery" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/andybalholm/cascadia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/htmlquery" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xmlquery" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/antchfx/xpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/go-sql-driver/mysql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/gobwas/glob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/gocolly/colly" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/golang/protobuf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/hu17889/go_spider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/inflection" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/kennygrant/sanitize" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/konsorten/go-windows-terminal-sequences" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/AUTHORS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/api/prometheus/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/api/prometheus/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/random/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/random/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/simple/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/examples/simple/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/collector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/counter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/desc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/expvar_collector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/fnv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/gauge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/go_collector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/histogram.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/metric.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/process_collector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/promhttp/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/promhttp/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/push/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/push/push.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/registry.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/summary.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/untyped.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/value.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_golang/prometheus/vec.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/go/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/client_model/go/metrics.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/MAINTAINERS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/config/http_config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/decode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/encode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/expfmt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/from_test_parse_error_9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/fuzz/corpus/minimal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/text_create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/expfmt/text_parse.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg/autoneg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/eventlog_formatter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/syslog_formatter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/alert.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/fingerprinting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/fnv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/labels.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/labelset.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/metric.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/signature.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/silence.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/time.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/model/value.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/route/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/route/route.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/version/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/version/info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/MAINTAINERS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/bcache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/bcache/get.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/buddyinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/cmdline" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/comm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/fd/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/io" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/limits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/mountstats" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26231/stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/cmdline" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/comm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/fd/4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/limits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/26232/stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/584/stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/short/buddyinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/sizemismatch/buddyinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/buddyinfo/valid/buddyinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/fs/xfs/stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/mdstat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/ip_vs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/ip_vs_stats" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/net/xfrm_stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/stat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/abc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/ghi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/uvw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fixtures/symlinktargets/xyz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/fs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/ipvs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/mdstat.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/mountstats.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_io.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_limits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/proc_stat.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/stat.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/fixtures.ttar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/sysfs/fs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/ttar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfrm.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/parse.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/procfs/xfs/xfs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/saintfish/chardet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/sirupsen/logrus" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/github.com/temoto/robotstxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/gopkg.in/go-playground/validator.v9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/log/log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/time.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/houseCrawler/src/library/time/time_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="524fbbf0-92b3-4ad0-b4c8-aa83289679db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/crawlerHouseInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houseCrawler/src/app/crawler/spider.go" beforeDir="false" afterPath="$PROJECT_DIR$/houseCrawler/src/app/crawler/spider.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,20 +19,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/crawlerHouseInfo.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3402">
-              <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+            <state relative-caret-position="393">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/StringUtils.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="54" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
+              <folding>
+                <element signature="e#15#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse_lianjia.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbGeneratorUtil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -301,12 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/houseCrawler/src/app/xfHouse.go" />
-        <option value="$PROJECT_DIR$/houseCrawler/src/lib/log/anticheat/anticheat.go" />
-        <option value="$PROJECT_DIR$/houseCrawler/src/lib/log/agent.go" />
-        <option value="$PROJECT_DIR$/houseCrawler/src/app/dao/redis.go" />
-        <option value="$PROJECT_DIR$/houseCrawler/src/app/dao/group.go" />
-        <option value="$PROJECT_DIR$/houseCrawler/src/app/dao/extra_test.go" />
         <option value="$PROJECT_DIR$/houseCrawler/src/app/dao/callback.go" />
         <option value="$PROJECT_DIR$/houseCrawler/src/app/dao/challenge.go" />
         <option value="$PROJECT_DIR$/houseCrawler/src/lib/net/trace/propagation.go" />
@@ -351,7 +209,13 @@
         <option value="$PROJECT_DIR$/houseCrawler/src/app/config.toml" />
         <option value="$PROJECT_DIR$/houseCrawler/src/library/database/orm/orm.go" />
         <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/spider.go" />
         <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser_test.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil_test.go" />
+        <option value="$PROJECT_DIR$/houseCrawler/src/app/crawler/crawlerHouseInfo.go" />
       </list>
     </option>
   </component>
@@ -409,47 +273,30 @@
               <item name="goAppl" type="462c0819:PsiDirectoryNode" />
               <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
               <item name="goAppl" type="462c0819:PsiDirectoryNode" />
-              <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="huaweiWebSnap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goAppl" type="462c0819:PsiDirectoryNode" />
+              <item name="huaweiWebSnap" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
               <item name="goAppl" type="462c0819:PsiDirectoryNode" />
-              <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goAppl" type="462c0819:PsiDirectoryNode" />
-              <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goAppl" type="462c0819:PsiDirectoryNode" />
-              <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="orm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goAppl" type="462c0819:PsiDirectoryNode" />
-              <item name="houseCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="huaweiWebSnap" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goAppl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goAppl" type="462c0819:PsiDirectoryNode" />
+              <item name="windowFileCleaner" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -473,18 +320,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\git-project\goAppl\houseCrawler\src\utils" />
+      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library\database" />
+      <recent name="D:\project\git-project\goAppl\huaweiWebSnap\src\utils" />
+      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library" />
+      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library\log" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\git-project\goAppl\houseCrawler\src\library" />
       <recent name="D:\project\git-project\goAppl\houseCrawler\src\library\database\sql" />
       <recent name="D:\project\git-project\goAppl\houseCrawler\src\app\crawler" />
       <recent name="D:\project\git-project\goAppl\houseCrawler\src\app" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library\database" />
-      <recent name="D:\project\git-project\goAppl\houseCrawler\src\utils" />
-      <recent name="D:\project\git-project\goAppl\huaweiWebSnap\src\utils" />
-      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library" />
-      <recent name="D:\project\git-project\goAppl\houseCrawler\src\library\log" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -499,16 +346,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestLianjiaProcesser_Spider in app/crawler">
-    <configuration name="TestGeneratorTableSql in library" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestConverTableName in utils">
+    <configuration name="TestConverTableName in utils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="goApp" />
-      <working_directory value="$PROJECT_DIR$/houseCrawler/src/library" />
+      <working_directory value="$PROJECT_DIR$/houseCrawler/src/utils" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="library" />
+      <package value="utils" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGeneratorTableSql$" />
+      <pattern value="^TestConverTableName$" />
       <method v="2" />
     </configuration>
     <configuration name="TestLianjiaProcesser_DataStore in app/crawler" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -556,29 +403,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Test.TestLianjiaProcesser_Process in app/crawler" />
-      <item itemvalue="Go Test.TestGeneratorTableSql in library" />
+      <item itemvalue="Go Test.TestConverTableName in utils" />
       <item itemvalue="Go Test.TestLianjiaProcesser_DataStore in app/crawler" />
-      <item itemvalue="Go Test.TestNew in app/dao" />
+      <item itemvalue="Go Test.TestLianjiaProcesser_Process in app/crawler" />
       <item itemvalue="Go Test.TestLianjiaProcesser_Spider in app/crawler" />
+      <item itemvalue="Go Test.TestNew in app/dao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestConverTableName in utils" />
         <item itemvalue="Go Test.TestLianjiaProcesser_Spider in app/crawler" />
         <item itemvalue="Go Test.TestLianjiaProcesser_Process in app/crawler" />
         <item itemvalue="Go Test.TestLianjiaProcesser_DataStore in app/crawler" />
         <item itemvalue="Go Test.TestNew in app/dao" />
-        <item itemvalue="Go Test.TestGeneratorTableSql in library" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestLianjiaProcesser_DataStore_in_app_crawler - 2019.05.30 at 15h 10m 24s.xml">
-      <configuration name="TestLianjiaProcesser_DataStore in app/crawler" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLianjiaProcesser_DataStore_in_app_crawler - 2019.05.30 at 15h 23m 13s.xml">
-      <configuration name="TestLianjiaProcesser_DataStore in app/crawler" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestLianjiaProcesser_DataStore_in_app_crawler - 2019.05.30 at 15h 27m 25s.xml">
       <configuration name="TestLianjiaProcesser_DataStore in app/crawler" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -603,6 +444,12 @@
     <history-entry file="TestLianjiaProcesser_Spider_in_app_crawler - 2019.05.30 at 16h 37m 22s.xml">
       <configuration name="TestLianjiaProcesser_Spider in app/crawler" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestConverTableName_in_utils - 2019.06.11 at 08h 56m 31s.xml">
+      <configuration name="TestConverTableName in utils" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConverTableName_in_utils - 2019.06.11 at 08h 57m 56s.xml">
+      <configuration name="TestConverTableName in utils" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,21 +462,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="3" width="1932" height="1044" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405982" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21047008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4957265" weight="0.35274726" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49519232" visible="true" weight="0.2725275" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946582" weight="0.3978022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50267094" side_tool="true" visible="true" weight="0.32857144" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49732906" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5048077" side_tool="true" visible="true" weight="0.2725275" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49626067" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49305555" weight="0.33406594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -813,45 +661,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/github.com/prometheus/common/log/eventlog_formatter.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil_test.go" />
-    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="e#15#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Go/src/database/sql/sql.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="845" column="14" selection-start-line="845" selection-start-column="14" selection-end-line="845" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/logUtil.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/StringUtils.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/StringUtils_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/library/database/orm/BUILD" />
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm/errors.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -980,20 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/library/dbGeneratorUtil.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1057,16 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/spider.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/spiderProcesser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/github.com/jinzhu/gorm/naming.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1078,13 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/dao.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1131,15 +909,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="891">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/dao/dao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/spider.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/spiderProcesser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/lianjialoupanSpiderProcesser.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3402">
-          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+        <state relative-caret-position="486">
+          <caret line="30" column="63" selection-start-line="30" selection-end-line="30" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbUtil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#15#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/htmlParse_lianjia.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huaweiWebSnap/src/utils/dbGeneratorUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/crawlerHouseInfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/StringUtils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/app/crawler/anjukeloupanSpiderProcesser_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseCrawler/src/utils/dbGeneratorUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
