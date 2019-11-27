@@ -1,0 +1,4 @@
+[Log]
+Stdout = true
+Dir = "/data/logs/"
+MaxLogFile = 20
